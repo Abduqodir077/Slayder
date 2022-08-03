@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    background: gray;
+    position: relative;
+}
+
+.kata-slider{
+    width: 600px;
+    height: auto;
+    position: absolute;
+    left: 25%;
+    top: 55%;
+    transform: translateY(-50%);
+    overflow: hidden;
+}
+
+.slider{
+    display: inline-flex;
+    transition: 0.9s ease;
+}
+
+.slider-col{
+    width: 600px;
+    height: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.slider-col h1{
+    color: red;
+    font-style: 65px;
+    font-weight: 800;
+    margin: 10px 0;
+}
+
+.slider-col p{
+    color: aliceblue;
+    font-style: 15px;
+    line-height: 25px;
+}
+
+.slider-col button{
+    border: none;
+    width: 100px;
+    height: 30px;
+    color: red;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color: white;
+}
+
+.controller{
+    width: 0px;
+    height: auto;
+    display: block;
+    background: rgb(7, 7, 7);
+    position: absolute;
+    top: 55%;
+    right: 500px;
+    transform: translateY(-50%);
+    background-color: rgb(7, 7, 7);
+}
+
+#line1,
+#line2,
+#line3,
+#line4{
+    width: 10px;
+    height: 80px;
+    cursor: pointer;
+    transform: translateX(-50%);
+    margin: 5px 0;
+}
+
+
+
+
+/* #activ{
+    width: 8px;
+    height: 80px;
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    transition: 0.5s ease;
+    background-color: red;
+} */
+
+.slider-col img{
+    width: 600px;
+    height: 600px;
+}
+
+.crud_plus_minus {
+    flex-direction: column;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.crud_plus_minus input {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+
+}
+
+.crud_plus_minus button {
+    width: 70px;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    
+}
+
+.buy button {
+    border: none;
+    border-radius: 20px;
+    color: red;
+    width: 70px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0px;
+    margin-left: -5px;
+    margin-top: 40px;
+}
